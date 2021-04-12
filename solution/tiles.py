@@ -3,7 +3,8 @@ from PIL import Image, ImageDraw
 class domino:
     w = 0
     h = 0
-    r = 25
+    #r = 25
+    r = 50
     cr = 50
     offset = 20
     image = None
@@ -12,9 +13,9 @@ class domino:
     shadow_draw = None
     draw = None
     def __init__(self, w, h):
-        self.r = w / 15
+        #self.r = w / 15
+        #self.r = w / 5.0
         #self.cr = w / 7.5
-        self.cr = w / 5.0
         self.offset = int(w / 20)
 #        self.w = w-self.offset
 #        self.h = h-self.offset
